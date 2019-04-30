@@ -1,0 +1,198 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/nunesgrf/ontologies/artesanato"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/nunesgrf/ontologies/artesanato">
+    <Prefix name="" IRI="http://www.semanticweb.org/nunesgrf/ontologies/artesanato#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://xmlns.com/foaf/0.1/</Import>
+    <Declaration>
+        <Class IRI="#artesanato"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#artesanato_estrangeiro"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#artesao"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#artesao_autodidata"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#associacao_de_artesaos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#base_conceitual_do_artesanato_brasileiro"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#carteira_nacional_do_artesao"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#comunidade"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#confederacao_de_artesaos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cooperativa_de_artesaos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#coordenacoes_estaduais_de_artesanato"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#criatividade"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#diversidade_cultural"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#federacao_de_artesaos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#fins_lucrativos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#grupo_de_producao_artesanal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#materia-prima"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#mestre_artesao"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#politicas_publicas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#qualidade"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#qualificacao_profissional"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#setor_artesanal_brasileiro"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sicab"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sindicato_de_artesao"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#tecnicas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#tipologia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#trabalho_em_serie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#trabalho_manual"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsPartOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#artesao"/>
+        <Class IRI="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#artesanato_estrangeiro"/>
+        <Class IRI="#artesanato"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#artesao"/>
+        <Class IRI="#setor_artesanal_brasileiro"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#artesao_autodidata"/>
+        <Class IRI="#artesao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#associacao_de_artesaos"/>
+        <Class IRI="#sindicato_de_artesao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#base_conceitual_do_artesanato_brasileiro"/>
+        <Class IRI="#politicas_publicas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#carteira_nacional_do_artesao"/>
+        <Class IRI="#politicas_publicas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#comunidade"/>
+        <Class IRI="#setor_artesanal_brasileiro"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#confederacao_de_artesaos"/>
+        <Class IRI="#setor_artesanal_brasileiro"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#diversidade_cultural"/>
+        <Class IRI="#criatividade"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#federacao_de_artesaos"/>
+        <Class IRI="#confederacao_de_artesaos"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#grupo_de_producao_artesanal"/>
+        <Class IRI="#setor_artesanal_brasileiro"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#mestre_artesao"/>
+        <Class IRI="#artesao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sicab"/>
+        <Class IRI="#politicas_publicas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sindicato_de_artesao"/>
+        <Class IRI="#federacao_de_artesaos"/>
+    </SubClassOf>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#IsPartOf"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsPartOf"/>
+        <Class IRI="#associacao_de_artesaos"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsPartOf"/>
+        <Class IRI="#federacao_de_artesaos"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsPartOf"/>
+        <Class IRI="#sindicato_de_artesao"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IsPartOf"/>
+        <Class IRI="#confederacao_de_artesaos"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IsPartOf"/>
+        <Class IRI="#federacao_de_artesaos"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IsPartOf"/>
+        <Class IRI="#sindicato_de_artesao"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
