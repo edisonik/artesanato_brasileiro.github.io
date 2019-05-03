@@ -62,3 +62,5 @@ Com o docker e o docker-compose já instalado, para subir a aplicação no conta
 ```
 docker-compose up --biuld -d
 ```
+
+Se tudo ocorrer como esperado, poderá vizualizar a aplicação acessando 127.0.0.1:7000
