@@ -1,0 +1,10 @@
+./vscode
+vscode
+*.o
+exe
+*.json
+*.png
+*.jpg
+*.jpeg
+*.pyc
+
