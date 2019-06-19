@@ -25,12 +25,13 @@ SECRET_KEY = 'tz)v91-zxdx!(cii31g@)#*dfc8*f81bd^%*9lw6+59j+r-2&3'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'artesanatoMain.apps.ArtesanatoMainConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
