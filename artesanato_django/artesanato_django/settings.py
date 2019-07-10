@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # Added.
+    'haystack',
 ]
 
 MIDDLEWARE = [
@@ -75,18 +78,18 @@ WSGI_APPLICATION = 'artesanato_django.wsgi.application'
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
 DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#    }
-'default': {
-       'ENGINE': 'django.db.backends.postgresql_psycopg2',
-       'NAME': 'artesanatobd',
-       'USER': 'artesanatouser',
-       'PASSWORD': 'artesanatosenhabd',
-       'HOST': 'localhost',
-       'PORT': '',
-    }
+   'default': {
+       'ENGINE': 'django.db.backends.sqlite3',
+       'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+   }
+# 'default': {
+#        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#        'NAME': 'artesanatobd',
+#        'USER': 'artesanatouser',
+#        'PASSWORD': 'artesanatosenhabd',
+#        'HOST': 'localhost',
+#        'PORT': '',
+#     }
 }
 
 
@@ -107,6 +110,18 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+# Search engine
+
+HAYSTACK_CONNECTIONS = {
+    'default': {
+        'ENGINE': 'haystack.backends.elasticsearch_backend.ElasticsearchSearchEngine',
+        'URL': 'http://127.0.0.1:9200/',
+        'INDEX_NAME': 'haystack',
+    },
+}
+
+HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
 
 
 # Internationalization
