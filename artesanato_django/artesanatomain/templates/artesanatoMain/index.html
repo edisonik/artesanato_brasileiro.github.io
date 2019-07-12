@@ -47,19 +47,15 @@
                 <li class="active">
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Técnicas</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
+                      {% for item in tecnicas %}
                         <li>
-                            <a href="#">Técnica 1</a>
+                            <a href="/Tecnica/{{item.id}}">{{item.nome}}</a>
                         </li>
-                        <li>
-                            <a href="#">Técnica 2</a>
-                        </li>
-                        <li>
-                            <a href="#">Técnica 3</a>
-                        </li>
+                      {% endfor %}
                     </ul>
                 </li>
             <ul>
-            
+
         </nav>
 
 
