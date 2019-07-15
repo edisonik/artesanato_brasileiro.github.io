@@ -1,1 +1,19 @@
-<h1>teste</h1>
+{% extends 'artesanatoMain/base.html' %}
+
+
+{% block content %}
+{% for post in posts %}
+    <h2>{{ post.titulo }}</h2>
+    <p>{{ post.conteudo }}</p>
+    {% if post.img != "" %}
+        <img src="{{ post.img}}" alt="" width="300px" height="100px">
+    {% endif %}
+    <div>
+        <a href="/Historia/{{ post.id }}">Ler mais...</a>
+    </div>
+    <div class="line"></div>
+    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
+    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
+{% endfor %}
+<!-- <div class="line"></div> -->
+{% endblock %}

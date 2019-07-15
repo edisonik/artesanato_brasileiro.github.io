@@ -27,6 +27,7 @@ class Historia(models.Model):
 
 class Tecnica(models.Model):
     nome = models.CharField(max_length=150, null=False, verbose_name='Nome da Técnica')
+    descricao = models.CharField(max_length=5000, null=False, verbose_name='Sobre a Técnica')
     artesao = models.ManyToManyField(Artesao)
 
     def __str__(self):
