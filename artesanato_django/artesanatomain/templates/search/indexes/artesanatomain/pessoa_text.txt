@@ -1,0 +1,3 @@
+{{object.nome}}
+{{object.data_nascimento}}
+{{object.nacionalidade}}

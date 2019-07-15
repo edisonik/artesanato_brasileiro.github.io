@@ -13,18 +13,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">HOME</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><input type="submit" class="btn btn-primary" value="Add Customer">  </li>
-    </ul>
     </div>
   </div>
 </nav>
 {% endblock %}
 {% block content %}
-<div class="container-fluid bg-3 text-center">  
+
+<div class="container-fluid bg-3 text-left">  
 <form method="get" action="." class="form" role="form">
         {{ form.non_field_errors }}
         <div class="form-group">
@@ -37,22 +32,24 @@
         {% if query %}
             <h3>Results</h3>
                
-        <div class="container-fluid bg-4 text-left">    
+        <div class="container-fluid bg-4 text-center">    
                 <div class="row">
      
-                    {% for result in page.object_list %}
-                        
+                {% for result in page.object_list %}        
                 <div class="col-sm-4">
                   <div class="thumbnail">
                               
                     <div class="form-group">
-                        <p>Texto : {{result.pergunta}} </p>
+                      
+                        <p>{{result.nome}}</p>
+                        <p>{{result.historia}}</p>
+                        <p>{{result.nacionalidade}}</p>
                     </div>
                   </div>
                 </div>
                 {% empty %}
                      
-                   <p style="text-center">No results found.</p>
+                   <p style="text-left">No results found.</p>
                     {% endfor%}
                 </div>
         </div>   

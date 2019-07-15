@@ -78,18 +78,18 @@ WSGI_APPLICATION = 'artesanato_django.wsgi.application'
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
 DATABASES = {
-   'default': {
-       'ENGINE': 'django.db.backends.sqlite3',
-       'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-   }
-# 'default': {
-#        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#        'NAME': 'artesanatobd',
-#        'USER': 'artesanatouser',
-#        'PASSWORD': 'artesanatosenhabd',
-#        'HOST': 'localhost',
-#        'PORT': '',
-#     }
+#    'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#    }
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'artesanatobd',
+        'USER': 'artesanatouser',
+        'PASSWORD': 'artesanatosenhabd',
+        'HOST': 'localhost',
+        'PORT': '',
+    }
 }
 
 
@@ -129,7 +129,7 @@ HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Sao_Paulo'
 
 USE_I18N = True
 

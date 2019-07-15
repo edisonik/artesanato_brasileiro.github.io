@@ -4,6 +4,7 @@ from __future__ import unicode_literals
 from django.shortcuts import render
 from .models import *
 from django.shortcuts import get_object_or_404
+from haystack.generic_views import SearchView
 
 # Create your views here.
 def indexView(request):
@@ -37,3 +38,5 @@ def tecnicaView(request, tecnica_id):
 def descubraView(request):
     context={}
     return render(request, 'artesanatoMain/descubra.html', context)
+
+    
